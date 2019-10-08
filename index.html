@@ -1,11 +1,85 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" >
-    <title>My First Webpage</title>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>Jimmy Abruzzese - Assignment1</title>
+    <!--<link rel="stylesheet" href="main.css"> -->
+    <script src="https://kit.fontawesome.com/1f6bc2fe9f.js" crossorigin="anonymous"></script>
+
+    <style>
+        body{
+        font-family: Arial; 
+        }
+
+        #backgroundvid{
+        position: fixed;
+        max-width: 150%;
+        max-height: 130%; 
+        top: 0;
+        left: 0;
+        } 
+
+        .menu {
+            top: 10%;
+            right: 10%;
+            position: fixed;
+            list-style: none;
+            color: crimson;
+            size: 500%;
+        }
+
+        nav ul li a:hover{
+            color: green;
+        }
+
+        nav ul li a{
+            color:goldenrod;
+            font-size: 120%;
+        }
+
+        nav ul li {
+            list-style: none;
+        }
+
+        .words{
+            position: fixed;
+            left: 30%;
+            top: 30%;
+            color:goldenrod;
+            width: 100%;
+            height: auto;
+        }
+
+        div h1{
+            font-size: 350%;
+        }
+
+        div p{
+            font-size: 150%;
+        }
+    </style>
 </head>
-<body>
-    <!-- This is a comment-->
-    <h1> Jimmy Abruzzese</h1>
+
+<body class="main">
+
+    <video autoplay loop muted id="backgroundvid">
+        <source src="Binary_Data_Rain.mp4" type="video/mp4"> 
+    </video> 
+    
+    <nav class="menu">
+        <ul>
+            <li><i class="fas fa-crown"><a href="aboutme.html"> About Me</a></i></li>
+            <li><i class="fas fa-bolt"><a href="https://docdro.id/IKw7Icq"> Resume</a></i></li>
+            <li><i class="fab fa-d-and-d"><a href="dnd.html"> Dungeon Master</a></i></li>
+            <li><i class="fas fa-yin-yang"><a href="meaningoflife.html"> The Meaning of Life</a></i></li>
+        </ul>
+
+    </nav>
+
+	<div class= "words">
+        <h1>Jimmy Abruzzese</h1>
+        <p>Part Programmer || All Nerd</p>
+    </div>
+
 </body>
 </html>
